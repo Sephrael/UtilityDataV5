@@ -2,6 +2,7 @@ import React from 'react';
 import InvoiceTable from './InvoiceTable';
 import InvoiceCharts from './InvoiceCharts';
 import { format } from 'date-fns';
+import logo from '../assets/logo.jpg';
 
 const InvoiceReport = ({ data, accountInfo, reportDate }) => {
     const { accountId, serviceAddress, mailingAddress, settlementMonth } = accountInfo;
@@ -22,12 +23,7 @@ const InvoiceReport = ({ data, accountInfo, reportDate }) => {
             {/* Header */}
             <div className="flex justify-between items-start mb-8 border-b-4 border-green-800 pb-4 bg-[#E2EFD9] p-6 rounded-t-lg -mx-8 -mt-8">
                 <div className="flex items-center">
-                    {/* Placeholder for Logo - using text for now */}
-                    <div className="flex flex-col">
-                        <h1 className="text-2xl font-bold text-green-900">CITY OF</h1>
-                        <h1 className="text-3xl font-bold text-green-900">PALO ALTO</h1>
-                        <span className="text-sm tracking-widest text-green-800">UTILITIES</span>
-                    </div>
+                    <img src={logo} alt="City of Palo Alto Utilities" className="h-20 object-contain" />
                 </div>
                 <h1 className="text-3xl font-medium text-black mt-2">Electric Net Metering Statement</h1>
             </div>

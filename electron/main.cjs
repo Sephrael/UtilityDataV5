@@ -11,7 +11,7 @@ function createWindow() {
             nodeIntegration: true,
             contextIsolation: false, // For simple local file access if needed, though we use file input
         },
-        icon: path.join(__dirname, '../public/icon.png') // Placeholder, we might not have an icon yet
+        icon: path.join(__dirname, '../public/icon.svg')
     });
 
     if (isDev) {
