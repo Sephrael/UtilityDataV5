@@ -1,0 +1,26 @@
+{
+    "name": "DadUtility Dev Container",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": "..",
+        "target": "development"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "bradlc.vscode-tailwindcss",
+                "dsznajder.es7-react-js-snippets"
+            ]
+        }
+    },
+    "forwardPorts": [
+        5173
+    ],
+    "postCreateCommand": "npm install",
+    "remoteUser": "root"
+}

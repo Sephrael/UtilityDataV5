@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-mac
+release
+.git
+.devcontainer
+.vscode
+.idea
+*.log
+.DS_Store
