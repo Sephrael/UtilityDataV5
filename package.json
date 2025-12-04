@@ -52,7 +52,8 @@
     "appId": "com.dadutility.reportgenerator",
     "productName": "Utility Report Generator",
     "mac": {
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "icon": "public/icon.png"
     },
     "files": [
       "dist/**/*",
